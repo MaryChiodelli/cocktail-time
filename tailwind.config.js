@@ -8,9 +8,6 @@ module.exports = {
     "./nuxt.config.{js,ts}"
   ],
   theme: {
-    fontSize: {
-      '2xl': ['1.5rem', '2.25rem']
-    },
     extend: {
       spacing: {
         '21px': '21px',
