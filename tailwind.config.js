@@ -18,7 +18,8 @@ module.exports = {
         '29px': '29px',
         '30px': '30px',
         '37px': '37px',
-        '66px': '66px'
+        '66px': '66px',
+        '15': '3.75rem'
       },
       colors: {
         'gray': '#F5F5F5',
