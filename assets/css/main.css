@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind utilities;
+
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  padding: 0 2.5rem;
+}
