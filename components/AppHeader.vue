@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="pt-23px pb-21px text-center">
     <div class="wrapper">
       <NuxtLink class="logo" to="/">&#127865; Cocktail Time</NuxtLink>
     </div>
@@ -7,10 +7,6 @@
 </template>
 
 <style scoped>
-header {
-  padding: 23px 0 21px;
-  text-align: center;
-}
 .logo {
   font-size: 1.5rem;
   line-height: 2.25rem;

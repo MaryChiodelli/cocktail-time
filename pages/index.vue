@@ -1,5 +1,7 @@
 <template>
-  <div>Home</div>
+  <main>
+    <SearchBar />
+  </main>
 </template>
 
 <script>
