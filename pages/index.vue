@@ -7,8 +7,7 @@
         <ul class="mb-15 grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <li v-for="drink in drinks" :key="drink.idDrink">
             <NuxtLink :to="{ name: 'drinks-id', params: { id: drink.idDrink } }">
-              <img class="w-full aspect-square object-cover mb-5" :src="drink.strDrinkThumb" :alt="drink.strDrink">
-              <h3 class="text-2xl">{{ drink.strDrink }}</h3>
+              <DrinkCard :drink="drink" />
             </NuxtLink>
           </li>
         </ul>
