@@ -10,6 +10,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+h3 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 .wrapper {
   max-width: 1536px;
   padding: 0 2.5rem;
