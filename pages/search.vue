@@ -18,9 +18,21 @@
 
 <script>
 export default {
-  async asyncData({ query, $axios }) {
-    const { drinks } = await $axios.$get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query.name}`)
-    return { drinks }
+  // async asyncData({ query, $axios }) {
+  //   const { drinks } = await $axios.$get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query.name}`)
+  //   return { drinks }
+  // },
+  data() {
+    return {
+      drinks: []
+    }
+  },
+  watch: {
+    '$route.query': '$fetch'
+  },
+  async fetch() {
+    const { drinks } = await this.$axios.$get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${this.$route.query.name}`)
+    this.drinks = drinks
   }
 }
 </script>

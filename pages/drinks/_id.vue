@@ -2,7 +2,7 @@
   <main>
     <section class="flex">
       <div class="w-1/2 pr-5">
-        <img :src="drink.strDrinkThumb" :alt="drink.strDrink">
+        <img class="w-full" :src="drink.strDrinkThumb" :alt="drink.strDrink">
       </div>
       <div class="w-1/2 py-20 px-32">
         <ul class="flex mb-10 text-sm leading-normal">
