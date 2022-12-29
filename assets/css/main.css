@@ -20,6 +20,11 @@ h3 {
   margin: 0 auto;
 }
 
+.form-wrapper {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
 .btn {
   min-width: 194px;
   padding: 11px 16px 9px;

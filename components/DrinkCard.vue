@@ -1,7 +1,7 @@
 <template>
   <div>
     <img class="w-full aspect-square object-cover mb-5" :src="drink.strDrinkThumb" :alt="drink.strDrink">
-    <h3 class="text-2xl">{{ drink.strDrink }}</h3>
+    <h3 class="text-lg leading-[33px] text-black-700">{{ drink.strDrink }}</h3>
   </div>
 </template>
 

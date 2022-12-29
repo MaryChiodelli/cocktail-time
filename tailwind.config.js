@@ -8,18 +8,21 @@ module.exports = {
     "./nuxt.config.{js,ts}"
   ],
   theme: {
+    fontSize: {
+      sm: ['0.875rem', '1.5'],
+      base: ['1rem', '1.5'],
+      lg: ['1.5rem', { lineHeight: '1.5', fontWeight: '600 ' }],
+      xl: ['3rem', { lineHeight: '1.5', fontWeight: '600 ' }]
+    },
     extend: {
       spacing: {
-        '21px': '21px',
-        '23px': '23px',
-        '29px': '29px',
-        '30px': '30px',
         '37px': '37px',
         '66px': '66px',
         '15': '3.75rem'
       },
       colors: {
-        'gray': '#F5F5F5',
+        'gray-500': '#F5F5F5',
+        'gray-700': '#979797',
         'black-700': '#22232B',
         'black-900': '#252525'
       }
