@@ -18,10 +18,14 @@
 
 <script>
 export default {
-  // async asyncData({ query, $axios }) {
-  //   const { drinks } = await $axios.$get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query.name}`)
-  //   return { drinks }
-  // },
+  head () {
+    return {
+      title: 'Search',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Search drinks and cocktails from around the world.' }
+      ]
+    }
+  },
   data() {
     return {
       drinks: []

@@ -6,7 +6,9 @@
       </div>
       <div class="w-1/2 py-20 px-32">
         <ul class="flex mb-10 text-sm">
-          <li class="after:content-['/'] after:mx-2">Home</li>
+          <li class="after:content-['/'] after:mx-2">
+            <NuxtLink to="/">Home</NuxtLink>
+          </li>
           <li>{{ drink.strDrink }}</li>
         </ul>
         <h1 class="mb-9 text-xl">{{ drink.strDrink }}</h1>
@@ -46,6 +48,14 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: this.drink.strDrink,
+      meta: [
+        { hid: 'description', name: 'description', content: 'A simple page showing ingredients and instructions for preparing ' + this.drink.strDrink }
+      ]
+    }
+  },
   async asyncData({ params, $axios }) {
     const { drinks } = await $axios.$get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${params.id}`)
     const drink = drinks[0]
