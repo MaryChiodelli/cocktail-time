@@ -26,7 +26,6 @@ h3 {
 }
 
 .btn {
-  min-width: 194px;
   padding: 11px 16px 9px;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -35,4 +34,10 @@ h3 {
 .btn--dark {
   background-color: var(--black);
   color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    min-width: 194px;
+  }
 }
