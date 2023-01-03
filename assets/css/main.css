@@ -16,7 +16,7 @@ h3 {
 
 .wrapper {
   max-width: 1536px;
-  padding: 0 2.5rem;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
@@ -26,6 +26,7 @@ h3 {
 }
 
 .btn {
+  min-width: 194px;
   padding: 11px 16px 9px;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -36,8 +37,8 @@ h3 {
   color: var(--white);
 }
 
-@media (min-width: 768px) {
-  .btn {
-    min-width: 194px;
+@media (min-width: 640px) {
+  .wrapper {
+    padding: 0 2.5rem;
   }
 }

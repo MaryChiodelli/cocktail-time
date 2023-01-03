@@ -34,7 +34,7 @@
     <section class="pt-10 pb-20">
       <div class="wrapper">
         <h2 class="mb-20 text-lg text-black-700 text-center">Browse more</h2>
-        <ul class="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+        <ul class="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-10">
           <li v-for="drink in moreDrinks" :key="drink.idDrink">
             <NuxtLink :to="{ name: 'drinks-id', params: { id: drink.idDrink } }">
               <DrinkCard :drink="drink" />
